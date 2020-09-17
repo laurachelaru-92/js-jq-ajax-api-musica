@@ -66,3 +66,7 @@ header img {
 .cd span.year {
     color: grey;
 }
+
+.d-none {
+  display: none;
+}
