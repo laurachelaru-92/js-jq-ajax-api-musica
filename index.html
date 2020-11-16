@@ -12,24 +12,28 @@
         <header>
             <div class="container">
                 <img src="logo.png" alt="logo" />
-                <select id="genere-musicale">
-                  <option value="All" >All</option>
-                  <option value="Pop">Pop</option>
-                  <option value="Rock">Rock</option>
-                  <option value="Metal">Metal</option>
-                  <option value="Jazz">Jazz</option>
-                </select>
+                <div class="genre">
+                  <h4>Select your genre</h4>
+                  <select id="genere-musicale">
+                    <option value="All" >All</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Jazz">Jazz</option>
+                  </select>
+                </div>
             </div>
         </header>
-
-        <div class="cds-container container">
-          <!-- Dischi -->
-          <!-- / dischi -->
-        </div>
+        <main>
+          <div class="cds-container container">
+            <!-- Dischi -->
+            <!-- / dischi -->
+          </div>
+        </main>
         <!-- Handlebars template -->
         <script id="cd-template" type="text/x-handlebars-template">
           <div class="cd">
-              <img src="{{poster}}" alt="">
+              <img src="{{poster}}" alt="{{title}} image not found">
               <h3>{{title}}</h3>
               <span class="author">{{author}}</span>
               <span class="year">{{year}}</span>
